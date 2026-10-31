@@ -1,11 +1,12 @@
 import * as Haptics from 'expo-haptics';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { Animated, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Animated, Linking, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Circle } from 'react-native-svg';
 import { Arabic, FadeIn, Txt } from '@/components/ui';
-import { DHIKR } from '@/data/dhikr';
+import { DHIKR, hadithUrl, meaningFor, sourceFor } from '@/data/dhikr';
+import { langNames } from '@/i18n/strings';
 import { useSettings } from '@/lib/settings';
 import { colors, fonts, motion, radius, space } from '@/theme';
 
@@ -28,12 +29,14 @@ export default function DhikrCounterScreen() {
 
   const step = dhikr?.steps[stepIdx];
   const isLastStep = !!dhikr && stepIdx === dhikr.steps.length - 1;
-  const finished = !!step && isLastStep && count >= step.count;
+  const target = step?.count ?? null; // null — счёт без цели
+  const finished = !!step && target !== null && isLastStep && count >= target;
 
   useEffect(() => {
     if (!step) return;
-    Animated.timing(progress, { toValue: count / step.count, duration: motion.exit, easing: motion.easeOut, useNativeDriver: false }).start();
-  }, [count, step, progress]);
+    if (target === null) return;
+    Animated.timing(progress, { toValue: count / target, duration: motion.exit, easing: motion.easeOut, useNativeDriver: false }).start();
+  }, [count, step, target, progress]);
 
   if (!dhikr || !step) return null;
 
@@ -44,7 +47,7 @@ export default function DhikrCounterScreen() {
       Animated.timing(press, { toValue: 0.96, duration: 60, easing: motion.easeIn, useNativeDriver: true }),
       Animated.timing(press, { toValue: 1, duration: 180, easing: motion.easeOut, useNativeDriver: true }),
     ]).start();
-    if (next < step.count) {
+    if (target === null || next < target) {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
       setCount(next);
       return;
@@ -67,6 +70,8 @@ export default function DhikrCounterScreen() {
   };
 
   const long = step.arabic.length > 120;
+  const meaning = meaningFor(step, settings.lang);
+  const src = sourceFor(dhikr, settings.lang);
   const dashoffset = progress.interpolate({ inputRange: [0, 1], outputRange: [CIRC, 0] });
 
   return (
@@ -90,9 +95,17 @@ export default function DhikrCounterScreen() {
         <FadeIn key={stepIdx} style={{ alignItems: 'center' }}>
           <Arabic size={long ? 24 : step.arabic.length > 50 ? 28 : 40}>{step.arabic}</Arabic>
           <Txt style={[styles.translit, long && styles.translitLong]}>{step.translit}</Txt>
-          <Txt variant="caption" style={styles.meaning}>
-            {step.meaning[settings.lang]}
-          </Txt>
+          {!step.translitOfficial && (
+            <Txt variant="caption" style={styles.flag}>
+              {t.translitUnofficial}
+            </Txt>
+          )}
+          {meaning && (
+            <Txt variant="caption" style={styles.meaning}>
+              {meaning.lang !== settings.lang && `${t.meaningFallback} ${langNames[meaning.lang]}\n`}
+              {meaning.text}
+            </Txt>
+          )}
         </FadeIn>
       </ScrollView>
 
@@ -117,13 +130,18 @@ export default function DhikrCounterScreen() {
             <Txt style={[styles.count, finished && { color: colors.accent }]}>{finished ? t.done : count}</Txt>
             {!finished && (
               <Txt variant="caption">
-                / {step.count} {t.times}
+                {target === null ? t.freeCount : `/ ${target} ${t.times}`}
               </Txt>
             )}
           </View>
         </Animated.View>
         <Txt variant="caption" style={{ marginTop: space.md }}>
-          {finished ? `${t.source}: ${dhikr.source}` : t.tapToCount}
+          {finished ? t.done : t.tapToCount}
+        </Txt>
+      </Pressable>
+      <Pressable onPress={() => Linking.openURL(hadithUrl(dhikr, settings.lang))} hitSlop={8}>
+        <Txt variant="caption" style={styles.source}>
+          {t.source}: {src.attribution} · {src.grade} · HadeethEnc №{dhikr.hadith}
         </Txt>
       </Pressable>
     </View>
@@ -138,6 +156,8 @@ const styles = StyleSheet.create({
   translit: { fontFamily: fonts.semibold, fontSize: 18, lineHeight: 26, color: colors.ink, textAlign: 'center', marginTop: space.sm },
   translitLong: { fontFamily: fonts.medium, fontSize: 16, lineHeight: 24 },
   meaning: { textAlign: 'center', marginTop: space.sm, maxWidth: 340 },
+  flag: { textAlign: 'center', marginTop: space.xs, fontSize: 11, opacity: 0.8 },
+  source: { textAlign: 'center', marginTop: space.md, fontSize: 11, textDecorationLine: 'underline' },
   tapArea: { alignItems: 'center', justifyContent: 'center', borderRadius: radius.lg, paddingTop: space.md },
   ringWrap: { width: RING, height: RING, alignItems: 'center', justifyContent: 'center' },
   count: { fontFamily: fonts.bold, fontSize: 64, lineHeight: 72, color: colors.ink, fontVariant: ['tabular-nums'], letterSpacing: -1.5 },

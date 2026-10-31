@@ -19,6 +19,7 @@ export const fonts = {
   bold: 'Inter_700Bold',
   arabic: 'Amiri_400Regular',
   arabicBold: 'Amiri_700Bold',
+  quran: 'UthmanicHafs',
 } as const;
 
 export const space = { xs: 4, sm: 8, md: 16, lg: 24, xl: 32, xxl: 48 } as const;

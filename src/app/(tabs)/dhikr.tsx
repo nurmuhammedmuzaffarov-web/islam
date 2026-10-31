@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { ChevronIcon } from '@/components/icons';
 import { Arabic, Card, FadeIn, Screen, Segmented, Txt } from '@/components/ui';
-import { CATEGORIES, DHIKR, totalCount, type Category } from '@/data/dhikr';
+import { CATEGORIES, DHIKR, sourceFor, type Category } from '@/data/dhikr';
 import { useSettings } from '@/lib/settings';
 import { colors, fonts, space } from '@/theme';
 
 export default function DhikrListScreen() {
-  const { t } = useSettings();
+  const { settings, t } = useSettings();
   const [cat, setCat] = useState<Category>('istighfar');
   const label: Record<Category, string> = { istighfar: t.catIstighfar, dhikr: t.catDhikr, dua: t.catDua };
   const items = DHIKR.filter((d) => d.category === cat);
@@ -29,13 +29,13 @@ export default function DhikrListScreen() {
           return (
             <FadeIn key={d.id} index={i + 2}>
               <Card onPress={() => router.push({ pathname: '/dhikr/[id]', params: { id: d.id } })}>
-                <Arabic size={multi ? 24 : 26} style={{ marginBottom: space.xs }}>
+                <Arabic size={multi ? 24 : 26} numberOfLines={2} style={{ marginBottom: space.xs }}>
                   {multi ? d.steps.slice(0, 3).map((s) => s.arabic).join(' · ') : first.arabic}
                 </Arabic>
-                <Txt style={styles.translit}>{multi ? d.steps.map((s) => s.translit).slice(0, 3).join(' · ') : first.translit}</Txt>
+                <Txt numberOfLines={2} style={styles.translit}>{multi ? d.steps.map((s) => s.translit).slice(0, 3).join(' · ') : first.translit}</Txt>
                 <View style={styles.footer}>
                   <Txt variant="caption">
-                    {multi ? d.steps.map((s) => s.count).join(' + ') : totalCount(d)} {t.times} · {d.source}
+                    {first.count === null ? t.freeCount : `${d.steps.map((s) => s.count).join(' + ')} ${t.times}`} · {sourceFor(d, settings.lang).attribution}
                   </Txt>
                   <ChevronIcon color={colors.inkMuted} />
                 </View>

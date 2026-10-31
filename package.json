@@ -38,7 +38,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
-    "test": "node --test --experimental-strip-types src/lib/*.test.ts"
+    "test": "node --test --experimental-strip-types \"src/**/*.test.ts\"",
+    "fetch:quran": "NODE_USE_ENV_PROXY=1 node scripts/fetch-quran.mjs",
+    "build:dhikr": "NODE_USE_ENV_PROXY=1 node scripts/build-dhikr.mjs"
   },
   "private": true
 }

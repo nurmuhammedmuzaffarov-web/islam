@@ -1,0 +1,455 @@
+{
+ "fetchedAt": "2026-10-31",
+ "source": "https://hadeethenc.com",
+ "items": [
+  {
+   "id": "istighfar-after-salah",
+   "category": "istighfar",
+   "hadith": 10947,
+   "source": {
+    "ky": {
+     "attribution": "Муслим жазып калтырган",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Передал Муслим",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Narrated by Muslim",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "رواه مسلم",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "أَسْتَغْفِرُ اللهَ",
+     "translit": "Астагфируллох",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Прошу Аллаха о прощении",
+      "en": "I seek forgiveness from Allah"
+     },
+     "count": 3
+    },
+    {
+     "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ، وَمِنْكَ السَّلَامُ، تَبَارَكْتَ ذَا الْجَلَالِ وَالْإِكْرَامِ",
+     "translit": "Аллахумма антас-салам, ва минкас-салам, табааракта зал жалаали вал икрам",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "О Аллах, Ты — Мир и от Тебя — мир, благословен Ты, о Обладатель величия и щедрости!",
+      "en": "O Allah, You are As-Salām (peace, perfection), and as-salām comes from You. Blessed are You, O Possessor of Glory and Honor"
+     },
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "astaghfirullah-wa-atubu",
+   "category": "istighfar",
+   "hadith": 4808,
+   "source": {
+    "ru": {
+     "attribution": "Передал аль-Бухари",
+     "grade": "Достоверный"
+    },
+    "en": {
+     "attribution": "Narrated by Bukhari",
+     "grade": "Authentic hadith"
+    },
+    "ar": {
+     "attribution": "رواه البخاري",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "أَسْتَغْفِرُ اللهَ وأَتُوبُ إليهِ",
+     "translit": "Астагфируллаха ва атуубу илайх",
+     "translitOfficial": false,
+     "meaning": {
+      "ru": "Испрашиваю у Аллаха прощения и приношу Ему покаяние",
+      "en": "I ask Allah for forgiveness and repent to Him"
+     },
+     "count": 70
+    }
+   ]
+  },
+  {
+   "id": "astaghfirullah-al-hayy",
+   "category": "istighfar",
+   "hadith": 10576,
+   "source": {
+    "ru": {
+     "attribution": "Передал ат-Тирмизи - передал Абу Давуд",
+     "grade": "Достоверный"
+    },
+    "en": {
+     "attribution": "Narrated by At-Termedhy - Narrated by Abu Daoud",
+     "grade": "Authentic hadith"
+    },
+    "ar": {
+     "attribution": "رواه أبو داود والترمذي",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "أَسْتَغْفِرُ الله الذي لا إله إلا هو الحَيَّ القيَّومَ وأتوب إليه",
+     "translit": "Астагфируллаахал-лазии ла илааха илла хуал-хаййал-каййуума ва атуубу илайх",
+     "translitOfficial": false,
+     "meaning": {
+      "ru": "Прошу прощения у Аллаха, помимо Которого нет иного истинного бога, Живого, Поддерживающего жизнь, и приношу Ему свое покаяние!",
+      "en": "I ask forgiveness from Allah, there is no deity except Him, the Ever-Living, the Sustainer of existence, and I turn to Him in repentance"
+     },
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "sayyid-al-istighfar",
+   "category": "istighfar",
+   "hadith": 5503,
+   "source": {
+    "ky": {
+     "attribution": "Бухари жазып калтырган",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Передал аль-Бухари",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Narrated by Al-Bukhāri",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "رواه البخاري",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي، فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+     "translit": "Аллахумма анта рабби, ла илааха илла ант, халактании ва ана абдук, ва ана ала ахдика ва ваъдика мастатаът, аъуузу бика мин шарри ма санаът, абуу-у лака би ниъматика алаййа, ва абуу-у лака би занбии, фагфир лии, фа иннаху ла йагфируз-зунууба илла ант",
+     "translitOfficial": false,
+     "meaning": {
+      "ky": "Аллахым, Сен менин - Раббимсиң, Сенден башка ибадатка татыктуу кудай жок. Сен мени жараттың, мен Сенин кулуңмун. Мен чолом жетишинче Сага берген убада, шартымды сактаймын. Жасаган иштеримдин жамандыгынан сактоону Сенден суранам. Мага берген нээмат-жакшылыктарыңды жана күнөөлөрүмдү мойнума алам. Мени кечир, Сенден башка күнөөлөрдү кечирүүчү эч ким жок",
+      "ru": "О Аллах, Ты — Господь мой, нет бога, кроме Тебя; Ты сотворил меня, и я Твой раб, и я буду верен завету с Тобой и буду полагаться на обещанное Тобой, насколько смогу. Прошу у Тебя защиты от зла того, что я сделал, признаю милости, оказанные Тобой, и признаю грех свой. Прости же меня, ибо, поистине, никто не прощает грехов, кроме Тебя!",
+      "en": "O Allah, You are my Lord. You created me, and I am Your slave. I will remain faithful to Your covenant and promise as much as possible. I seek refuge with You from the evil of what I have done. I acknowledge Your favor upon me, and I admit my sin. So, forgive me. Indeed, none can forgive sins but You"
+     },
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "tasbih-after-salah",
+   "category": "dhikr",
+   "hadith": 10948,
+   "source": {
+    "ky": {
+     "attribution": "Муслим жазып калтырган",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Передал Муслим",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Narrated by Muslim",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "رواه مسلم",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "سُبْحَانَ اللهِ",
+     "translit": "Субханаллах",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Пречист Аллах",
+      "en": "Glory be Allah"
+     },
+     "count": 33
+    },
+    {
+     "arabic": "الْحَمْدُ لِلهِ",
+     "translit": "Алхамдулиллах",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Хвала Аллаху",
+      "en": "Praise be to Allah"
+     },
+     "count": 33
+    },
+    {
+     "arabic": "اللهُ أَكْبَرُ",
+     "translit": "Аллаху Акбар",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Аллах велик",
+      "en": "Allah is the Most Great"
+     },
+     "count": 33
+    },
+    {
+     "arabic": "لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+     "translit": "Лаа илаха иллаллааху вахдаху лаа шарикалах, лахул мулку, ва лахул хамду, ва хува алаа кулли шайин кодиир",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Нет бога, кроме одного лишь Аллаха, у Которого нет сотоварища. Ему принадлежит владычество, и Ему — хвала, и Он всё может",
+      "en": "There is no god except Allah. He is One and has no partner with Him. To Him belongs sovereignty and to Him belongs praise, and He is Omnipotent over everything"
+     },
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "tahlil-100",
+   "category": "dhikr",
+   "hadith": 65905,
+   "source": {
+    "ru": {
+     "attribution": "Привели Аль-Бухари и Муслим",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Agreed upon",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "متفق عليه",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "لاَ إِلَهَ إِلَّا اللَّهُ، وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ المُلْكُ وَلَهُ الحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+     "translit": "Лаа илаха иллаллааху вахдаху лаа шарикалах, лахул мулку, ва лахул хамду, ва хува алаа кулли шайин кодиир",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Нет божества, кроме Аллаха, Единого, у Которого нет сотоварища. Ему принадлежит власть, Ему причитается хвала, и Ему под силу всякая вещь",
+      "en": "There is no god but Allah. He is One, and He has no partner with Him; to Him belong the sovereignty and praise, and He is competent over all things"
+     },
+     "count": 100
+    }
+   ]
+  },
+  {
+   "id": "subhanallahi-wa-bihamdihi",
+   "category": "dhikr",
+   "hadith": 5516,
+   "source": {
+    "ky": {
+     "attribution": "Муттафакун алайхи (хадистин ишенимдүүлүгүнө бир ооздон макулдашылган)",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Привели Аль-Бухари и Муслим",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Agreed upon",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "متفق عليه",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "سُبْحَانَ اللهِ وَبِحَمْدِهِ",
+     "translit": "Субханаллоохи ва бихамдихи",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Пречист Аллах и хвала Ему",
+      "en": "Glory be to Allah, and praise be to Him"
+     },
+     "count": 100
+    }
+   ]
+  },
+  {
+   "id": "two-light-words",
+   "category": "dhikr",
+   "hadith": 5507,
+   "source": {
+    "ky": {
+     "attribution": "Муттафакун алайхи (хадистин ишенимдүүлүгүнө бир ооздон макулдашылган)",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Привели Аль-Бухари и Муслим",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Agreed upon",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "متفق عليه",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "سُبْحَانَ اللهِ الْعَظِيمِ، سُبْحَانَ اللهِ وَبِحَمْدِهِ",
+     "translit": "Субханаллахиль-азыими, Субханаллахи уа бихамдих",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Пречист Великий Аллах, Пречист Аллах и хвала Ему",
+      "en": "Glory be to Allah, the Majestic, glory and praise be to Allah"
+     },
+     "count": null
+    }
+   ]
+  },
+  {
+   "id": "four-beloved-words",
+   "category": "dhikr",
+   "hadith": 5475,
+   "source": {
+    "ky": {
+     "attribution": "Муслим жазып калтырган",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Передал Муслим",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Narrated by Muslim",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "رواه مسلم",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "سُبْحَانَ اللهِ، وَالْحَمْدُ لِلهِ، وَلَا إِلَهَ إِلَّا اللهُ، وَاللهُ أَكْبَرُ",
+     "translit": "Субханаллах, Алхамдулиллах, Лаа илааха иллаллах, Аллаху Акбар",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Пречист Аллах, Хвала Аллаху, Нет божества, достойного поклонения, кроме Аллаха, Аллах велик",
+      "en": "Glory be Allah, praise be to Allah, there is no god but Allah, Allah is the Most Great"
+     },
+     "count": null
+    }
+   ]
+  },
+  {
+   "id": "salawat-ibrahimiya",
+   "category": "dhikr",
+   "hadith": 5377,
+   "source": {
+    "ky": {
+     "attribution": "Муттафакун алайхи (хадистин ишенимдүүлүгүнө бир ооздон макулдашылган)",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Привели Аль-Бухари и Муслим",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Agreed upon",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "متفق عليه",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+     "translit": "Аллахумма солли алаа Мухаммад, ва алаа аали Мухаммад. Камаа соллайта алаа Иброхима, ва алаа аали Иброхим. Иннака хамидум-мажиид.  Аллахумма баарик алаа Мухаммад, ва алаа аали Мухаммад. Камаа бааракта алаа Иброхима, ва алаа аали Иброхим. Иннака хамидум-мажиид",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "О Аллах, благослови Мухаммада и семейство Мухаммада, как благословил Ты семейство Ибрахима, поистине, Ты — Достойный хвалы, Славный! О Аллах, пошли благодать Мухаммаду и семейству Мухаммада, как послал Ты ее семейству Ибрахима, поистине, Ты — Достойный хвалы, Славный!",
+      "en": "O Allah, bestow Your grace upon Muhammad and the family of Muhammad just as You bestowed Your grace upon the family of Abraham. Verily, You are Praiseworthy, All-Glorious. O Allah, bless Muhammad and the family of Muhammad just as You blessed the family of Abraham. Verily, You are Praiseworthy, All-Glorious"
+     },
+     "count": null
+    }
+   ]
+  },
+  {
+   "id": "rabbana-atina",
+   "category": "dua",
+   "hadith": 5502,
+   "source": {
+    "ky": {
+     "attribution": "Муттафакун алайхи (хадистин ишенимдүүлүгүнө бир ооздон макулдашылган)",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Привели Аль-Бухари и Муслим",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Agreed upon",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "متفق عليه",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَفِي الآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ",
+     "translit": "Роббана аатинаа фид-дуня хасана, ва фил аахироти хасана, ва кынаа азаабан-наар",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "Наш Господь, даруй нам в этом мире благо и в мире вечном благо и упаси нас от мук Огня",
+      "en": "Our Lord, give us in this world that which is good and in the Hereafter that which is good and protect us from the torment of the Fire"
+     },
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "allahumma-ainni",
+   "category": "dua",
+   "hadith": 3518,
+   "source": {
+    "ky": {
+     "attribution": "رواه أبو داود والنسائي وأحمد",
+     "grade": "Сахих (ишенимдүү)"
+    },
+    "ru": {
+     "attribution": "Передали Абу Дауд, ан-Насаи и Ахмад",
+     "grade": "Достоверный хадис"
+    },
+    "en": {
+     "attribution": "Narrated by Abu Dāwūd, An-Nasā’i, and Ahmad",
+     "grade": "Authentic"
+    },
+    "ar": {
+     "attribution": "رواه أبو داود والنسائي وأحمد",
+     "grade": "صحيح"
+    }
+   },
+   "steps": [
+    {
+     "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+     "translit": "Аллахумма аъинни ъалаа зикрика ва шукрика ва хусни ъибадатика",
+     "translitOfficial": true,
+     "meaning": {
+      "ru": "О Аллах, помоги мне поминать Тебя, благодарить Тебя и поклоняться Тебе должным образом",
+      "en": "O Allah, help me remember You, thank You, and excellently worship You"
+     },
+     "count": 1
+    }
+   ]
+  }
+ ]
+}

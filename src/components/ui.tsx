@@ -28,9 +28,28 @@ export function Txt({ variant = 'body', style, ...rest }: TextProps & { variant?
   return <Text {...rest} style={[variants[variant], style]} />;
 }
 
-export function Arabic({ children, size = 30, style }: { children: string; size?: number; style?: StyleProp<any> }) {
+// quran — шрифт Комплекса короля Фахда: он рисует все знаки Мединского мусхафа из данных QuranEnc
+export function Arabic({
+  children,
+  size = 30,
+  style,
+  quran = false,
+  numberOfLines,
+}: {
+  children: string;
+  size?: number;
+  style?: StyleProp<any>;
+  quran?: boolean;
+  numberOfLines?: number;
+}) {
   return (
-    <Text style={[{ fontFamily: fonts.arabic, fontSize: size, lineHeight: size * 1.9, color: colors.ink, textAlign: 'center', writingDirection: 'rtl' }, style]}>
+    <Text
+      numberOfLines={numberOfLines}
+      style={[
+        { fontFamily: quran ? fonts.quran : fonts.arabic, fontSize: size, lineHeight: size * (quran ? 2.1 : 1.9), color: colors.ink, textAlign: 'center', writingDirection: 'rtl' },
+        style,
+      ]}
+    >
       {children}
     </Text>
   );
