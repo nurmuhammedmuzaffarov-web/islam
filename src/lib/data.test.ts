@@ -5,11 +5,12 @@ import { readFileSync } from 'node:fs';
 const quran = JSON.parse(readFileSync(new URL('../data/quran.json', import.meta.url), 'utf8'));
 const dhikr = JSON.parse(readFileSync(new URL('../data/dhikr.json', import.meta.url), 'utf8'));
 
-test('al-Fatiha and juz 30 are complete', () => {
+test('selected surahs and juz 30 are complete', () => {
   const nums = quran.surahs.map((s: { number: number }) => s.number);
-  assert.deepEqual(nums, [1, ...Array.from({ length: 37 }, (_, i) => 78 + i)]);
-  assert.equal(quran.surahs[0].ayahs.length, 7);
-  const juz30 = quran.surahs.slice(1).reduce((n: number, s: { ayahs: unknown[] }) => n + s.ayahs.length, 0);
+  assert.deepEqual(nums, [1, 18, 36, 67, ...Array.from({ length: 37 }, (_, i) => 78 + i)]);
+  const count = (n: number) => quran.surahs.find((s: { number: number }) => s.number === n).ayahs.length;
+  assert.deepEqual([count(1), count(18), count(36), count(67)], [7, 110, 83, 30]);
+  const juz30 = quran.surahs.filter((s: { number: number }) => s.number >= 78).reduce((n: number, s: { ayahs: unknown[] }) => n + s.ayahs.length, 0);
   assert.equal(juz30, 564);
 });
 

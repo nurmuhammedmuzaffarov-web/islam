@@ -5,7 +5,8 @@
 // Запуск: npm run fetch:quran
 import { writeFileSync } from 'node:fs';
 
-const SURAHS = [1, ...Array.from({ length: 37 }, (_, i) => 78 + i)]; // аль-Фатиха и 30-й джуз (78–114)
+// аль-Фатиха, аль-Кахф, Йа Син, аль-Мульк и 30-й джуз (78–114)
+const SURAHS = [1, 18, 36, 67, ...Array.from({ length: 37 }, (_, i) => 78 + i)];
 const EXTRA_AYAHS = [{ id: 'ayat-al-kursi', sura: 2, aya: 255 }];
 
 const QE = 'https://quranenc.com/api/v1';
